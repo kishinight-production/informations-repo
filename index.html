@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>KishiNight Production</title>
+
+        <meta name="description" content="KishiNight Production — Studio créatif auteur du projet Monde Dytopia et d'autres univers.">
+        <meta name="keywords" content="Lore, Dystopie, Utopie, KishiNight Production, Dytopia, Monde">
+        <meta name="author" content="KishiNight Production">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- Introduction -->
+            <h1>KishiNight Production</h1>
+            <p>
+                Le studio à pour but de créer des jeux vidéos, histoires, et produits dérivés du monde dytopia.
+            </p>
+        </header>
+
+        <main>
+            <!-- Menu -->
+            <div class="menu">
+                <div class="menu-button" id="menu-button">
+                    <p>__</p>
+                    <p>__</p>
+                    <p>__</p>
+                </div>
+                <div class="menu-contenu" id="menu-contenu">
+                    <a style="border-top: none;" href="#dytopia">Projet "Monde dytopia"</a>
+                </div>
+            </div>
+
+            <!-- Projet 1 -->
+            <div class="carte" id="dytopia">
+                <h1>Monde dytopia</h1>
+
+                <hr>
+
+                <h2>Présentation</h2>
+                <p>
+                    Le monde dytopia est un monde regroupant science fiction, dystopie et utopie. Ce monde à pour but d'inspirer d'autres projet autour de KishiNight Production.<br>
+                    L'objectif de ce monde est de représenter, sous forme d'explorateur de fichiers, le monde. Auquel chaque document, chaque fichier, représente une partie du Lore.
+                </p>
+
+                <h2>Introduction</h2>
+                <p>
+                    Vous aurez accès à un terminal, pour vous connecter à la base de données de l'empire Nexuria, vous devrez tapez la commande dans le terminal: <code>connect -base nexuria</code>.
+                    Par la suite nous vous demanderons votre identifiant et votre mot de passe. Suite à votre connection, vous pourrez avoir accès à certains fichiers de la base de données.
+                </p>
+
+                <blockquote>
+                    Pour tout ceux n'ayant pas de connexion, nous vous conseillons de tester <code>Visiteur</code> et comme mot de passe <code>12345</code>.
+                </blockquote>
+
+                <blockquote>
+                    Les mot de passe ne sont pas sécurisé, elles sont à but d'immersion et non de création de compte.
+                </blockquote>
+
+                <div class="button">
+                    <a href="#">
+                        <button>Lancez le terminal</button>
+                    </a>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 KishiNight Production</p>
+            <p>Contact <a href="kishirednight@gmail.com">kishirednight@gmail.com</a></p>
+            <p>Version 0.0.0.0</p>
+        </footer>
+
+        <script>
+            const button = document.getElementById('menu-button');
+
+            button.addEventListener('click', function() {
+                if (document.getElementById('menu-contenu').style.visibility === "hidden") {
+                    document.getElementById('menu-contenu').style.visibility = "visible"
+                }
+                else {
+                    document.getElementById('menu-contenu').style.visibility = "hidden"
+                }
+            });
+        </script>
+    </body>
+</html>

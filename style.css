@@ -1,0 +1,152 @@
+/* === Balises générales === */
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-size: 0.95rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(to bottom, #220000, black);
+    padding-top: 2.5%;
+    text-align: center;
+}
+
+main {
+    padding-inline: 2.5%;
+    padding-block: 1.25%;
+}
+
+footer {
+    background: linear-gradient(to top, #110000, #070707);
+    padding-top: 2.5%;
+    padding-bottom: 1.25%;
+    margin-top: 2%;
+    border-top: 0.05rem solid #880000;
+    text-align: center;
+}
+
+/* === Balises === */
+/* Titre */
+h1,h2,h3 {
+    color: #D00;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Texte */
+a {
+    color: #DAA;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #855;
+    text-decoration: underline;
+}
+
+code {
+    color: #00AA00;
+    border: 0.05rem solid #151515;
+    padding-inline: 1%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Autres */
+button {
+    background-color: #800;
+    color: white;
+    padding-block: 1%;
+    padding-inline: 3%;
+    margin-block: 2%;
+    border: 0.1rem solid #500;
+}
+
+button:hover {
+    background-color: #D00;
+    border: 0.1rem solid #800;
+    cursor: pointer;
+}
+
+blockquote {
+    background-color: #101010;
+    border-left: 0.05rem solid #880000;
+    padding-left: 3%;
+    padding-block: 1%;
+    margin-inline: 0;
+}
+
+hr {
+    color: #880000;
+    margin-block: 5%;
+    border-style: solid;
+    font-size: 0.05rem;
+}
+
+/* === Classes === */
+.carte {
+    padding-inline: 6%;
+    padding-block: 2.5%;
+    margin: 2.5%;
+    line-height: 150%;
+    background-color: #070707;
+    border:0.05rem solid #880000;
+}
+
+.carte h1 {
+    margin: 0;
+}
+
+.button {
+    text-align: center;
+}
+
+.menu-button {
+    display: block;
+    background-color: #070707;
+    border: 0.05rem solid #880000;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    user-select: none;
+}
+
+.menu-button:hover {
+    background-color: #151515;
+    cursor: pointer;
+}
+
+.menu-contenu {
+    display: grid;
+    background-color: #070707;
+    border:0.05rem solid #880000;
+    visibility: visible;
+}
+
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 2.5%;
+    width: 25%;
+    position: fixed;
+    top: 0;
+}
+
+.menu p {
+    margin: 0;
+    line-height: 25%;
+    padding: 1%;
+}
+
+.menu a {
+    background-color: #070707;
+    color: white;
+    text-decoration: none;
+    padding: 5%;
+    text-align: center;
+    border-top: 0.05rem solid #161616;
+}
+
+.menu a:hover {
+    background-color: #151515;
+}
