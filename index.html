@@ -22,7 +22,7 @@
 
         <main>
             <!-- Menu -->
-            <div class="menu">
+            <div class="menu" id="menu">
                 <div class="menu-button" id="menu-button">
                     <p>__</p>
                     <p>__</p>
@@ -48,11 +48,11 @@
                 <h2>Introduction</h2>
                 <p>
                     Vous aurez accès à un terminal, pour vous connecter à la base de données de l'empire Nexuria, vous devrez tapez la commande dans le terminal: <code>connect -base nexuria</code>.
-                    Par la suite nous vous demanderons votre identifiant et votre mot de passe. Suite à votre connection, vous pourrez avoir accès à certains fichiers de la base de données.
+                    Par la suite nous vous demanderons votre identifiant et votre mot de passe. Suite à votre connexion, vous pourrez avoir accès à certains fichiers de la base de données.
                 </p>
 
                 <blockquote>
-                    Pour tout ceux n'ayant pas de connexion, nous vous conseillons de tester <code>Visiteur</code> et comme mot de passe <code>12345</code>.
+                    Pour tout ceux n'ayant pas de connexion, nous vous conseillons de tester <code>visiteur</code> et comme mot de passe <code>12345</code>.
                 </blockquote>
 
                 <blockquote>
@@ -69,20 +69,37 @@
         </main>
 
         <footer>
+            <div class="redirection">
+                <a href="https://discord.gg/tKnHGnytSp" class="carte">
+                    <h4>Serveur Discord - KishiNight Production</h4>
+                    <p>Cliquez ici, pour rejoindre.</p>
+                </a>
+
+                <a href="docs/mentions-legale.html" class="carte">
+                    <h4>Mentions légales</h4>
+                    <p>Cliquez ici, pour visionner.</p>
+                </a>
+            </div>
             <p>© 2026 KishiNight Production</p>
-            <p>Contact <a href="kishirednight@gmail.com">kishirednight@gmail.com</a></p>
+            <p>Contact <a href="mailto:kishirednight@gmail.com">kishirednight@gmail.com</a></p>
             <p>Version 0.0.0.0</p>
         </footer>
 
         <script>
+            document.body.addEventListener('click', function(event) {
+                if (!event.target.closest("#menu")) {
+                    document.getElementById('menu-contenu').style.display = "none";
+                };
+            });
+
             const button = document.getElementById('menu-button');
 
             button.addEventListener('click', function() {
-                if (document.getElementById('menu-contenu').style.visibility === "hidden") {
-                    document.getElementById('menu-contenu').style.visibility = "visible"
+                if (document.getElementById('menu-contenu').style.display === "grid") {
+                    document.getElementById('menu-contenu').style.display = "none"
                 }
                 else {
-                    document.getElementById('menu-contenu').style.visibility = "hidden"
+                    document.getElementById('menu-contenu').style.display = "grid"
                 }
             });
         </script>

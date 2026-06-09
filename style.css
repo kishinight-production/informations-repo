@@ -3,7 +3,7 @@ body {
     background-color: black;
     color: white;
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 110%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -43,6 +43,7 @@ a {
 a:hover {
     color: #855;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 code {
@@ -84,6 +85,23 @@ hr {
 }
 
 /* === Classes === */
+.redirection {
+    text-align: left;
+    display: flex;
+}
+
+.redirection a {
+    color: white;
+    text-decoration: none;
+    padding: 2%;
+    width: 100%;
+    border: 0.1rem solid #880000;
+}
+
+.redirection a:hover {
+    background-color: #151515;
+}
+
 .carte {
     padding-inline: 6%;
     padding-block: 2.5%;
@@ -117,16 +135,15 @@ hr {
 }
 
 .menu-contenu {
-    display: grid;
     background-color: #070707;
     border:0.05rem solid #880000;
-    visibility: visible;
+    display: none;
 }
 
 .menu {
     display: flex;
     padding: 0;
-    margin: 2.5%;
+    margin: 2.75%;
     width: 25%;
     position: fixed;
     top: 0;
@@ -134,8 +151,8 @@ hr {
 
 .menu p {
     margin: 0;
-    line-height: 25%;
-    padding: 1%;
+    line-height: 30%;
+    padding: 0;
 }
 
 .menu a {

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>KishiNight Production - Mentions légales</title>
+
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>KishiNight Production - Mentions légales</h1>
+            <p>Créé le 08 juin 2026. / Mis à jour le 08 juin 2026.</p>
+            <p>Version 0.0</p>
+        </header>
+
+        <main>
+            <!-- Menu -->
+            <div class="menu" id="menu">
+                <div class="menu-button" id="menu-button">
+                    <p>__</p>
+                    <p>__</p>
+                    <p>__</p>
+                </div>
+                <div class="menu-contenu" id="menu-contenu">
+                    <a style="border-top: none;" href="#editeur">Identification de l'éditeur</a>
+                    <a href="#hebergeur">Hébergeur</a>
+                    <a href="#propriete">Propriété intellectuelle</a>
+                    <a href="#donnees">Données personnelles / cookies</a>
+                    <a href="#modification">Modification des mentions légales</a>
+                </div>
+            </div>
+
+            <!-- Identification de l'éditeur -->
+            <div class="carte" id="editeur">
+                <h1>Identification de l'éditeur</h1>
+                <hr>
+                
+                <p>
+                    KishiNight Production est un projet indépendant et non professionel. Celle ci est gérer par kishirednight (pseudonyme).<br>
+                    Le projet est basé en <u>France</u>. Pour tout contact, l'email est <a href="mailto:kishirednight@gmail.com">kishirednight@gmail.com</a>.
+                </p>
+            </div>
+
+            <!-- Hébergeur -->
+            <div class="carte" id="hebergeur">
+                <h1>Hébergeur</h1>
+                <hr>
+
+                <p>
+                    Voici la liste des différents hébergements utilisés.
+                </p>
+
+                <h2>Site web</h2>
+                <p>
+                    Nous utilisons <u>GitHub pages</u> de <u>GitHub, Inc.</u> basée au <u>88 Colin P Kelly Jr Street, San Francisco, CA 94107, États-Unis</u>. Voir sur <a href="https://github.com/">GitHub</a>.
+                </p>
+            </div>
+
+            <!-- Propriété intellectuelle -->
+            <div class="carte" id="propriete">
+                <h1>Propriété intellectuelle</h1>
+                <hr>
+
+                <p>
+                    Tout ce qui est liés à KishiNight Production, et comme copyright "<i>© 2026 KishiNight Production</i>" est sous la propriétée de <a href="#editeur">l'éditeur</a>.
+                    La license utiliser est <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.
+                </p>
+
+                <blockquote>
+                    Si, du contenu est afficher par erreur sur le site alors qu'il ne nous appartient pas, merci de le signaler immédiatement. Nous ne revendiquerons jamais la propriétée d'un autre contenu sous license.
+                </blockquote>
+            </div>
+
+            <!-- Données personnelles / cookies -->
+            <div class="carte" id="donnees">
+                <h1>Données personnelles / cookies</h1>
+                <hr>
+
+                <p>
+                    Les services tiers intégrés au site (comme GitHub Pages) peuvent collecter des données techniques selon leurs propres politiques de confidentialité.<br>
+                    De ce qui est de d'autres services liés à KishiNight Production, les données récoltées sont seulement à usage de fonctionnement des services, auquels les politiques de confidentialités préciseront leurs utilitées.
+                </p>
+
+                <blockquote>
+                    Aucun cookies ne sont déposer sur les sites.
+                </blockquote>
+            </div>
+
+            <!-- Modification des mentions légales -->
+            <div class="carte" id="modification">
+                <h1>Modification des mentions légales</h1>
+                <hr>
+
+                <p>
+                    Cette présente page peut toujours être améliorer et mis à jour, selon les circonstances du projet.
+                </p>
+            </div>
+            
+
+        </main>
+
+        <footer>
+            <p>© 2026 KishiNight Production</p>
+        </footer>
+
+        <script>
+            document.body.addEventListener('click', function(event) {
+                if (!event.target.closest("#menu")) {
+                    document.getElementById('menu-contenu').style.display = "none";
+                };
+            });
+
+            const button = document.getElementById('menu-button');
+
+            button.addEventListener('click', function() {
+                if (document.getElementById('menu-contenu').style.display === "grid") {
+                    document.getElementById('menu-contenu').style.display = "none"
+                }
+                else {
+                    document.getElementById('menu-contenu').style.display = "grid"
+                }
+            });
+        </script>
+    </body>
+</html>
