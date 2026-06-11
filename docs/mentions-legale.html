@@ -108,17 +108,20 @@
         <script>
             document.body.addEventListener('click', function(event) {
                 if (!event.target.closest("#menu")) {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Fermeture du menu par interaction sur la page.`);
                     document.getElementById('menu-contenu').style.display = "none";
                 };
             });
 
             const button = document.getElementById('menu-button');
 
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function(event) {
                 if (document.getElementById('menu-contenu').style.display === "grid") {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Fermeture du menu par interaction sur le bouton.`);
                     document.getElementById('menu-contenu').style.display = "none"
                 }
                 else {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Ouverture du menu par interaction sur le bouton.`);
                     document.getElementById('menu-contenu').style.display = "grid"
                 }
             });
