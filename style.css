@@ -54,6 +54,10 @@ h1,h2,h3 {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
 
+h4,h5,h6 {
+    text-decoration: underline;
+}
+
 /* Texte */
 a {
     color: var(--lien);
@@ -138,7 +142,6 @@ hr {
 .button {
     text-align: center;
 }
-
 .menu-button {
     display: block;
     background-color: var(--fond-secondaire);
