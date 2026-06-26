@@ -56,6 +56,7 @@ h1,h2,h3 {
 
 h4,h5,h6 {
     text-decoration: underline;
+    color: var(--fond-boutton);
 }
 
 /* Texte */
@@ -130,7 +131,7 @@ hr {
     padding-inline: 6%;
     padding-block: 2.5%;
     margin: 2.5%;
-    line-height: 150%;
+    line-height: 200%;
     background-color: var(--fond-secondaire);
     border: var(--bordure) solid var(--couleur-bordure);
 }
