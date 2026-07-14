@@ -1,5 +1,5 @@
 # Contrat de contribution bénévole
-Version 1.0
+Version 0.0.0.0 - bêta
 
 ---
 
@@ -25,7 +25,7 @@ Cette autorisation est accordée de manière permanente afin d'assurer la contin
 
 ---
 
-# Lors de l'intégration
+# Intégration
 
 Lors de son arrivée, le bénévole s'engage à :
 
@@ -34,6 +34,8 @@ Lors de son arrivée, le bénévole s'engage à :
 - communiquer son pseudo principal utilisé sur les plateformes du projet ;
 - indiquer ses domaines de compétence ainsi que ses motivations ;
 - confirmer qu'il accepte le présent contrat de contribution.
+
+Dans le cas où le bénévole respecte ces conditions d'intégrations, le bénévole fera officiellement partie de KishiNight Production et en exerce ces droits de responsabilité.
 
 ---
 
@@ -63,6 +65,17 @@ KishiNight Production s'engage à :
 Le nom **KishiNight Production**, son identité, ses logos, son univers, ses projets ainsi que leurs éléments officiels restent sous la responsabilité et les droits du fondateur et non du bénévole.
 
 Les contributions réalisées spécialement pour les projets de KishiNight Production peuvent être conservées, modifiées et utilisées conformément aux conditions acceptées par le bénévole.
+
+---
+
+# Responsabilité
+
+Le bénévole, selon l'équipe intégrer, peut posséder des responsabilités ou des marques d'autoritées sur certains élément du projet.
+
+Voici sa liste et des responsabilités à prendre.
+- Modération: Possède une autorité sur la communauté seulement dans les cas auquels ils doivent faire appliquer le réglement communautaire des projets.
+- Rédaction: Possède le droit de donner son avis, refuser, accepter des documents sur les projets d'écriture venant du Lore.
+- Direction: Possède l'autorité de recruter, virer, des bénévoles pour leur équipe, si cela est réellement nécessaire sans nuir aux différents projets de KishiNight Production.
 
 ---
 

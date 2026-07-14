@@ -13,6 +13,7 @@
     --lien-touch: #885555;
     --code: #00AA00;
     --couleur-texte: white;
+    --couleur-texte2: #DDD;
     /* taille */
     --bordure: 0.05rem;
     --bordure-epaisse: 0.1rem;
@@ -60,10 +61,15 @@ h4,h5,h6 {
 }
 
 /* Texte */
+i {
+    color: var(--couleur-texte2);
+}
+
 a {
     color: var(--lien);
     text-decoration: none;
 }
+
 
 a:hover {
     color: var(--lien-touch);
