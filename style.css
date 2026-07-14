@@ -197,3 +197,18 @@ hr {
 .menu a:hover {
     background-color: var(--bouton-touch2);
 }
+
+.suite-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.suite-images img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
