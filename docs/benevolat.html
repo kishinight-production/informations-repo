@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>KishiNight Production - Bénévolat</title>
+        <link rel="icon" type="image/" href="https://kishinight-production.github.io/images-repo/logo/kishinight-sansfond.png">
+
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>KishiNight Production - Fiches de bénévolat</h1>
+            <p>Crée le 19 juillet 2026.</p>
+            <p>Version 0.0.1.0 - bêta</p>
+        </header>
+
+        <main>
+            <!-- Menu -->
+            <div class="menu" id="menu">
+                <div class="menu-button" id="menu-button">
+                    <p>__</p>
+                    <p>__</p>
+                    <p>__</p>
+                </div>
+                <div class="menu-contenu" id="menu-contenu">
+                    <a style="border-top: none;" href="#intro">Introduction</a>
+                    <a href="#accept">Ce qu'il accepte</a>
+                    <a href="#droit">Les droit du bénévole</a>
+                    <a href="#integre">Intégration</a>
+                </div>
+            </div>
+            
+
+        </main>
+
+        <footer>
+            <p>© 2026 KishiNight Production</p>
+        </footer>
+
+        <script>
+            document.body.addEventListener('click', function(event) {
+                if (!event.target.closest("#menu")) {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Fermeture du menu par interaction sur la page.`);
+                    document.getElementById('menu-contenu').style.display = "none";
+                };
+            });
+
+            const button = document.getElementById('menu-button');
+
+            button.addEventListener('click', function(event) {
+                if (document.getElementById('menu-contenu').style.display === "grid") {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Fermeture du menu par interaction sur le bouton.`);
+                    document.getElementById('menu-contenu').style.display = "none"
+                }
+                else {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Ouverture du menu par interaction sur le bouton.`);
+                    document.getElementById('menu-contenu').style.display = "grid"
+                }
+            });
+        </script>
+    </body>
+</html>
