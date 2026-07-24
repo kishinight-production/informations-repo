@@ -115,6 +115,15 @@ hr {
     font-size: var(--bordure);
 }
 
+img {
+    cursor: pointer;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
 /* === Classes === */
 .redirection {
     text-align: left;
@@ -213,10 +222,20 @@ hr {
     display: block;
 }
 
-img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.overlay.active {
+    display: flex;
 }

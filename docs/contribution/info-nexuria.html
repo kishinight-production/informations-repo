@@ -466,10 +466,27 @@
             </div>
             <p>© 2026 KishiNight Production</p>
             <p>Contact <a href="mailto:kishirednight@gmail.com">kishirednight@gmail.com</a></p>
-            <p>Version 0.0.0.0 - bêta</p>
+            <p>Version 0.0.1.0 - bêta</p>
+
+            <div id="overlay" class="overlay">
+                <img id="preview">
+            </div>
         </footer>
 
         <script>
+            const img = document.getElementsByTagName("img");
+            const overlay = document.getElementById("overlay");
+            const preview = document.getElementById("preview");
+
+            img.addEventListener("click", () => {
+                preview.src = img.src;
+                overlay.classList.add("active");
+            });
+
+            overlay.addEventListener("click", () => {
+                overlay.classList.remove("active");
+            });
+
             document.body.addEventListener('click', function(event) {
                 if (!event.target.closest("#menu")) {
                     console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Fermeture du menu par interaction sur la page.`);
