@@ -13,7 +13,7 @@
     --lien-touch: #885555;
     --code: #00AA00;
     --couleur-texte: white;
-    --couleur-texte2: #DDD;
+    --couleur-texte2: #AAA;
     /* taille */
     --bordure: 0.05rem;
     --bordure-epaisse: 0.1rem;
@@ -61,7 +61,7 @@ h4,h5,h6 {
 }
 
 /* Texte */
-i {
+i,b {
     color: var(--couleur-texte2);
 }
 
@@ -82,6 +82,34 @@ code {
     border: var(--bordure) solid var(--couleur-bordure2);
     padding-inline: 1%;
     font-family: 'Courier New', Courier, monospace;
+}
+
+/* Table */
+table {
+    border: 2.5px solid var(--couleur-texte);
+    border-collapse: collapse;
+    min-width: 100%;
+}
+
+th {
+    background-color: var(--couleur-rouge-deg);
+    color: var(--couleur-texte);
+    border: 2px solid var(--couleur-texte);
+    min-width: 100%;
+    text-align: center;
+    padding-block: 2%;
+    padding-inline: 3%
+}
+
+td {
+    color: var(--couleur-texte);
+    border: 2px solid var(--couleur-texte);
+    min-height: 100%;
+    text-align: center;
+}
+
+td ul {
+    text-align: left;
 }
 
 /* Autres */
@@ -113,6 +141,15 @@ hr {
     margin-block: 5%;
     border-style: solid;
     font-size: var(--bordure);
+}
+
+img {
+    cursor: pointer;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
 }
 
 /* === Classes === */
@@ -213,10 +250,20 @@ hr {
     display: block;
 }
 
-img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.overlay.active {
+    display: flex;
 }
