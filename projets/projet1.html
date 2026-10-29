@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>KishiNight Production - Projet 1 - Documentation</title>
+        <link rel="icon" type="image/" href="https://kishinight-production.github.io/images-repo/logo/kishinight-sansfond.png">
+
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>KishiNight Production - Projet 1 - Documentation</h1>
+        </header>
+
+        <main>
+            <!-- Menu -->
+            <div class="menu" id="menu">
+                <div class="menu-button" id="menu-button">
+                    <p>__</p>
+                    <p>__</p>
+                    <p>__</p>
+                </div>
+                <div class="menu-contenu" id="menu-contenu">
+                    <a style="border-top: none;" href="#present">Présentation du projet</a>
+                    <a href="#connect">Connexion au terminal</a>
+                    <a href="#contrib">Contribution</a>
+                </div>
+            </div>
+
+            <!-- Présentation du projet -->
+            <div class="carte" id="present">
+                <h1>Présentation du projet</h1>
+
+                <hr>
+
+                <p>
+                    Le monde de Dytopia est un monde créé par l'imagination d'un être tout-puissant. Ce monde n'existe pas et n'est qu'une illusion.<br>
+                    Le personnage principal et central de ce monde est Nexus MARVIK, l'être le plus puissant sur le plan narratif, capable d'altérer les mondes dans lesquels il est présent, y compris ceux d'autres réalités.<br>
+                    La nation centrale de ce projet est l'Empire Nexuria, une nation indépendante qui cherche à avoir un peuple autonome, puissant et libre.
+                </p>
+
+                <blockquote>
+                    Le monde n'existe pas et doit être considéré comme quelque chose d'illusoire dans son existence même.
+                </blockquote>
+            </div>
+
+            <!-- Connexion au terminal -->
+            <div class="carte" id="connect">
+                <h1>Connexion au terminal</h1>
+
+                <hr>
+
+                <p>
+                    Le terminal est le centre de connexion entre l'utilisateur et les documents. Cette initiative immersive permet de rendre le monde beaucoup plus réel.<br>
+                    L'utilisateur devra donc saisir son identifiant et son mot de passe.
+                </p>
+
+                <blockquote>
+                    Les identifiants et les mots de passe sont créés uniquement par les membres internes de l'Empire. Aucun identifiant n'est associé à un membre réel.
+                </blockquote>
+
+                <h2>Liste des commandes</h2>
+
+                <p>
+                    Une fois connecté, vous pourrez saisir des commandes dans le terminal. En voici la liste :
+                </p>
+
+                <ul>
+                    <li><code>list</code> : renvoie la liste des documents disponibles.</li>
+                    <li><code>run {arg1}</code> : ouvre une fenêtre contenant le document indiqué en argument ({arg1}). Cet argument doit correspondre à un document disponible via la commande <code>list</code>.</li>
+                    <li><code>stop</code> : ferme la fenêtre ouverte.</li>
+                </ul>
+            </div>
+
+            <!-- Contribution -->
+            <div class="carte" id="contrib">
+                <h1>Contribution</h1>
+
+                <hr>
+
+                <p>
+                    Pour ajouter un document relatif au lore, il vous suffit de créer un fork GitHub à partir de ce lien : <a href="https://github.com/kishinight-production/explorateur-nexuria">ici</a>.<br>
+                    Les documents doivent respecter la nomenclature suivante : le nom du fichier doit suivre le format "<b>Document-SUJET-SOUSSUJET2-ETC.md</b>" et son contenu doit être entièrement rédigé en Markdown.<br>
+                    Lorsque vous aurez rédigé vos documents, merci d'inclure dans la description de la pull request les informations suivantes pour chaque fichier : "<u>Qu'est-ce qui mène à ce document ?</u> (Contexte, nécessité du document)" ; "<u>Qui écrit ce document ?</u> (Auteur, hiérarchie)" ; "<u>Pourquoi doit-on écrire ce document ?</u> (Raison, utilité)".<br>
+                    Ces questions permettent d'assurer la cohérence du lore. Une fois votre pull request soumise, attendez la confirmation d'un rédacteur.
+                </p>
+
+                <blockquote>
+                    Pour plus d'informations sur le Markdown utilisé et converti en HTML, cliquez <a href="#list-markdown">ici</a>.
+                </blockquote>
+
+                <p>
+                    Pour ajouter des images destinées aux illustrations, il vous suffit de créer un fork GitHub à partir de ce lien : <a href="https://github.com/kishinight-production/images-repo">ici</a>.<br>
+                    Lorsque vous ajouterez une image à votre document, n'oubliez pas d'inclure son lien complet ainsi que la syntaxe Markdown correspondante.
+                </p>
+
+                <blockquote>
+                    Nous n'acceptons pas que les documents utilisent des liens externes comme illustrations. Seules les images provenant du dépôt d'images du studio sont autorisées.
+                </blockquote>
+            </div>
+
+            <!-- Liste Markdown -->
+            <div class="carte" id="list-markdown">
+                <h1>Liste Markdown</h1>
+
+                <hr>
+
+                <ul>
+                    <li>Titre : <code># Texte</code> <i>(Pour les niveaux de titre, ajoutez un caractère "#".)</i></li>
+                    <li>Gras : <code>**Texte**</code></li>
+                    <li>Italique : <code>*Texte*</code></li>
+                    <li>Liste : <code>- Texte</code></li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 KishiNight Production</p>
+            <p>Contact <a href="mailto:kishirednight@gmail.com">kishirednight@gmail.com</a></p>
+            <p>Version 1.0.0.0</p>
+        </footer>
+
+        <script>
+            document.body.addEventListener('click', function(event) {
+                if (!event.target.closest("#menu")) {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Fermeture du menu par interaction sur la page.`);
+                    document.getElementById('menu-contenu').style.display = "none";
+                };
+            });
+
+            const button = document.getElementById('menu-button');
+
+            button.addEventListener('click', function(event) {
+                if (document.getElementById('menu-contenu').style.display === "grid") {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Fermeture du menu par interaction sur le bouton.`);
+                    document.getElementById('menu-contenu').style.display = "none"
+                }
+                else {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Ouverture du menu par interaction sur le bouton.`);
+                    document.getElementById('menu-contenu').style.display = "grid"
+                }
+            });
+        </script>
+    </body>
+</html>
