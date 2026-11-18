@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>KishiNight Production - Projet 3 - Documentation</title>
+        <link rel="icon" type="image/" href="https://kishinight-production.github.io/images-repo/logo/kishinight-sansfond.png">
+
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>KishiNight Production - Projet 3 - Documentation</h1>
+        </header>
+
+        <main>
+            <!-- Menu -->
+            <div class="menu" id="menu">
+                <div class="menu-button" id="menu-button">
+                    <p>__</p>
+                    <p>__</p>
+                    <p>__</p>
+                </div>
+                <div class="menu-contenu" id="menu-contenu">
+                    <a style="border-top: none;" href="#present">Présentation du projet</a>
+                    <a href="#mod">Système de modération</a>
+                </div>
+            </div>
+
+            <!-- Présentation du projet -->
+            <div class="carte" id="present">
+                <h1>Présentation du projet</h1>
+
+                <hr>
+
+                <p>
+                    Le bot d'automatissation de "KishiNight Production" est présent sur notre serveur <a href="https://discord.gg/8wsrQqa5Zf">Discord</a>. Son objectif est d'automatiser la contribution sur le <a href="projet1.html">projet 1</a>, ainsi que la modération de l'environnement.<br>
+                    Le bot n'est que disponible et réservé au serveur de "KishiNight Production".<br>
+                    Bien évidemment, à titre immersif, le bot représente les flux de document entre les membres et la base de données, et permet sa gestion. 
+                </p>
+            </div>
+
+            <!-- Système de modération -->
+            <div class="carte" id="mod">
+                <h1>Système de modération</h1>
+
+                <hr>
+
+                <h2>Blacklist</h2>
+
+                <p>
+                    Le système de blacklist en lui même est réservé qu'aux administrateurs, elle consiste à bannir un membre, sans que l'équipe de modération puisse le débannir, y compris les administrateurs sans faire les commandes adéquates.<br>
+                    Le système est répartie en plusieurs commandes.
+                </p>
+
+                <ul>
+                    <li><code>blacklist [utilisateur] [raison]</code>: L'<b>utilisateur</b> est banni sans que personne puisse le débannir pour une certaines <b>raisons</b>.</li>
+                    <li><code>unblacklist [utilisateur] [raison]</code>: L'<b>utilisateur</b> ne fais plus partie de la liste noir, et <b>peut</b> être débanni pour une certaines <b>raisons</b>.</li>
+                </ul>
+
+                <h2>Banissement</h2>
+
+                <p>
+                    Le système de banissement sert à bannir les membres d'un serveur, empéchant qui rejoigne le serveur Discord.
+                </p>
+
+                <ul>
+                    <li><code>ban [utilisateur] [raison] [temps]</code>: L'<b>utilisateur</b> est banni pour une certaines <b>raisons</b>, avec possiblement un <b>temps</b> défini.</li>
+                    <li><code>unban [utilisateur] [raison]</code>: L'<b>utilisateur</b> est débanni pour une certaines <b>raisons</b>.</li>
+                </ul>
+
+                <h2>Exclusion temporaire</h2>
+
+                <p>
+                    Le système d'exclusion temporaire sert à restreindre l'accès du serveur pendant un temps défini.
+                </p>
+
+                <ul>
+                    <li><code>timeout [utilisateur] [raison] [temps]</code>: L'<b>utilisateur</b> est exclue du serveur pour une certaines <b>raisons</b> et pendant un <b>temps</b> défini.</li>
+                    <li><code>untimeout [utilisateur] [raison]</code>: L'<b>utilisateur</b> n'est plus exclue du serveur pour une certaines <b>raisons</b>.</li>
+                </ul>
+
+                <h2>Expulsion et Avertissement</h2>
+
+                <p>
+                    L'expulsion consiste à retirer du serveur discord, un membre. Et l'avertissement consiste à seulement <u>avertir</u> un membre qui enfreins les règles.
+                </p>
+
+                <ul>
+                    <li><code>kick [utilisateur] [raison]</code>: L'<b>utilisateur</b> est expulser du serveur pour une certaines <b>raisons</b>.</li>
+                    <li><code>warn [utilisateur] [raison]</code>: L'<b>utilisateur</b> est avertie en message privée pour une certaines <b>raisons</b>.</li>
+                </ul>
+
+                <h2>Fonctionnement générale</h2>
+
+                <p>
+                    Lors du lancement d'une commande, une notification est envoyé dans le <a href="https://discord.com/channels/1512430629038329886/1531289410560331956">salon Discord</a>. Le salon <u>>ne permet pas</u> à la modération de supprimer les messages.<br>
+                    De plus, l'historique n'est que disponible par ce salon.
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 KishiNight Production</p>
+            <p>Contact <a href="mailto:kishirednight@gmail.com">kishirednight@gmail.com</a></p>
+            <p>Version 1.0.0.0</p>
+        </footer>
+
+        <script>
+            document.body.addEventListener('click', function(event) {
+                if (!event.target.closest("#menu")) {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Fermeture du menu par interaction sur la page.`);
+                    document.getElementById('menu-contenu').style.display = "none";
+                };
+            });
+
+            const button = document.getElementById('menu-button');
+
+            button.addEventListener('click', function(event) {
+                if (document.getElementById('menu-contenu').style.display === "grid") {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Fermeture du menu par interaction sur le bouton.`);
+                    document.getElementById('menu-contenu').style.display = "none"
+                }
+                else {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Ouverture du menu par interaction sur le bouton.`);
+                    document.getElementById('menu-contenu').style.display = "grid"
+                }
+            });
+        </script>
+    </body>
+</html>
