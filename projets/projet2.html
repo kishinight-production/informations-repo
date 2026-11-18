@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>KishiNight Production - Projet 2 - Documentation</title>
+        <link rel="icon" type="image/" href="https://kishinight-production.github.io/images-repo/logo/kishinight-sansfond.png">
+
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>KishiNight Production - Projet 2 - Documentation</h1>
+        </header>
+
+        <main>
+            <!-- Menu -->
+            <div class="menu" id="menu">
+                <div class="menu-button" id="menu-button">
+                    <p>__</p>
+                    <p>__</p>
+                    <p>__</p>
+                </div>
+                <div class="menu-contenu" id="menu-contenu">
+                    <a style="border-top: none;" href="#present">Présentation du projet</a>
+                    <a href="#menu">Fonctionnalité du menu</a>
+                </div>
+            </div>
+
+            <!-- Présentation du projet -->
+            <div class="carte" id="present">
+                <h1>Présentation du projet</h1>
+
+                <hr>
+
+                <p>
+                    L'institut de confinements anormaux (I.C.A.) est une institut de recherche, qui confine et expérimente sur les anomalies dans le monde.<br>
+                    L'objectif derrière cette institut est dans les <b>grandes lignes</b>, inspirer de l'univers de la <a href="https://scp-wiki.wikidot.com/">Fondation SCP</a>. L'histoire, l'organisation, les anomalies, les personnages historiques, seront et sont indépendant de l'univers SCP et sa license.<br>
+                    Le projet 2, est donc une représentation du genre "<i>Roleplay</i>" (Jeu de rôle) des jeux vidéos, sur la plateforme Roblox, son objectif est de ressembler la communauté autour d'un jeu sur l'univers.
+                </p>
+            </div>
+
+            <!-- Fonctionnalité du menu -->
+            <div class="carte" id="menu">
+                <h1>Fonctionnalité du menu</h1>
+
+                <p>
+                    Le menu est présent lors de la connexion au jeu, elle vous permet d'intéragir avec vos informations et celle du jeu.
+                </p>
+
+                <hr>
+
+                <h2>Fiche du personnel</h2>
+
+                <p>
+                    Les fiches représente les informations de toutes les personnes ayant rejoins le jeu. Mais, à titre d'immersion, elle permet de stocker le nombre de personnel présente de l'institut.<br>
+                    Sur ces fiches vous pouvez seulement voir ces informations:
+                    <ul>
+                        <li>Pseudo du joueur</li>
+                        <li>Identifiant du joueur</li>
+                        <li>Date d'arrivée sur le jeu</li>
+                    </ul>
+                    Ces informations sont distribuées sur le DataStore <u>dès votre arrivée</u> et votre menu est mis à jour toutes les X minutes.<br>
+                    Si vous souhaitez supprimer l'une de vos données, merci de rejoindre le serveur <a href="https://discord.gg/8wsrQqa5Zf">discord</a> et de faire part de votre demande.
+                </p>
+
+                <blockquote>
+                    Vous retrouverez les informations du personnel dans la barre "X" de votre menu.
+                </blockquote>
+
+                <h2>Multiverse</h2>
+
+                <p>
+                    Cette section représente l'accès aux différents serveur du jeu, vous pouvez vous y connecter en cliquant sur l'un des boutons. Cette fonctionnalité à pour but d'immersion, et de rejoindre différent univers.<br>
+                    Si vous êtes satisfait de la précense sur le serveur, alors la section vous permettra de lancer votre expérience de jeu.
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 KishiNight Production</p>
+            <p>Contact <a href="mailto:kishirednight@gmail.com">kishirednight@gmail.com</a></p>
+            <p>Version 1.0.0.0</p>
+        </footer>
+
+        <script>
+            document.body.addEventListener('click', function(event) {
+                if (!event.target.closest("#menu")) {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Fermeture du menu par interaction sur la page.`);
+                    document.getElementById('menu-contenu').style.display = "none";
+                };
+            });
+
+            const button = document.getElementById('menu-button');
+
+            button.addEventListener('click', function(event) {
+                if (document.getElementById('menu-contenu').style.display === "grid") {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Fermeture du menu par interaction sur le bouton.`);
+                    document.getElementById('menu-contenu').style.display = "none"
+                }
+                else {
+                    console.log(`[${new Date().toLocaleTimeString()}] - [Menu] Ouverture du menu par interaction sur le bouton.`);
+                    document.getElementById('menu-contenu').style.display = "grid"
+                }
+            });
+        </script>
+    </body>
+</html>
