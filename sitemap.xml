@@ -1,0 +1,38 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Page principale -->
+    <url>
+        <loc>https://kishinight-production.github.io/informations-repo/</loc>
+    </url>
+
+    <!-- Informations -->
+    <url>
+        <loc>https://kishinight-production.github.io/informations-repo/informations/mentions-legales.html</loc>
+    </url>
+
+    <!-- Organisations -->
+    <url>
+        <loc>https://kishinight-production.github.io/informations-repo/organisations/projet.html</loc>
+    </url>
+
+    <url>
+        <loc>https://kishinight-production.github.io/informations-repo/organisations/staff.html</loc>
+    </url>
+
+    <!-- Documentation des projets -->
+    <url>
+        <loc>https://kishinight-production.github.io/informations-repo/projets/projet1.html</loc>
+    </url>
+
+    <url>
+        <loc>https://kishinight-production.github.io/informations-repo/projets/projet2.html</loc>
+    </url>
+
+    <url>
+        <loc>https://kishinight-production.github.io/informations-repo/projets/projet3.html</loc>
+    </url>
+
+</urlset>
